@@ -243,11 +243,11 @@ def main():
                         help="path of output")
     args = parser.parse_args()
 
-    openai.api_key = args.openai_api_key
+    openai.api_key = "put api key here"
 
-    train=args.train
-    test=args.test
-    output_dir = args.output
+    train= "put path to train file here"
+    test= "put path to test file here"
+    output_dir = "put path to output here"
 
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
