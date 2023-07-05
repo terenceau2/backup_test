@@ -232,16 +232,6 @@ import argparse
 
 def main():
 
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--openai_api_key", type=str,
-                        help="openai key")
-    parser.add_argument("--train", type=str,
-                        help="path to train file")
-    parser.add_argument("--test", type=str,
-                        help="path to test file")
-    parser.add_argument("--output",
-                        help="path of output")
-    args = parser.parse_args()
 
     openai.api_key = "put api key here"
 
